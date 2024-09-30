@@ -29,8 +29,7 @@ class ChatBox extends React.Component {
                 <h2>{this.state.name}</h2>
                 <form onSubmit={this.onFormSubmit}>
                     <div>
-                        <label htmlFor="message-text">Meddelande</label>
-                        <textarea onChange={(evt) => this.setState({ message: evt.target.value })} id="message-text" value={this.state.message}></textarea>
+                        <textarea onChange={(evt) => this.setState({ message: evt.target.value })} value={this.state.message} placeholder="Message"></textarea>
                     </div>
                     <button>Send Message</button>
                 </form>
